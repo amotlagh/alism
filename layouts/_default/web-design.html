@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "my-page-head.html" . }}
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+
+    <style>
+
+      .dark {
+        --theme: #121417;
+        --white: rgb(255 255 255);
+        --black: #000000;
+        --header-gray: #2b2e36;
+        --header-section-fluid-img: url(/assets/service-img/header.svg);
+      }
+
+      @font-face {
+        font-family: Estedad;
+        src: url(/assets/fonts/Estedad-Light.woff2);
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: Estedad;
+        src: url(/assets/fonts/Estedad-Regular.woff2);
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: Estedad;
+        src: url(/assets/fonts/Estedad-Bold.woff2);
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: Estedad;
+        src: url(/assets/fonts/Estedad-Black.woff2);
+        font-weight: 900;
+      }
+
+
+      body .my-page-main{
+        font-size: 16px;
+        font-family: 'Estedad', sans-serif !important;
+        font-feature-settings: "kern", "calt", "rvrn", "ss03";
+        font-weight: 300;
+        box-shadow: 0px 4px 20px -5px var(--black);
+        border-top: 1px solid var(--header-gray);
+      }
+
+      .min-height-100-first-section {
+        min-height: 600px;
+        margin: auto;
+      }
+
+      .my-page-content {
+          position: relative;
+          max-width: calc(var(--main-width) + var(--gap) * 2);
+          margin-left: auto;
+          margin-right: auto;
+          padding: var(--gap);
+      }
+
+      #disqus_thread{
+          max-width: calc(var(--main-width) + var(--gap) * 2);
+          margin-left: auto;
+          margin-right: auto;
+          padding: var(--gap);
+          margin-top: 56px;
+      } 
+
+    
+      .header-section{
+        background-image: var(--header-section-fluid-img) ;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+      }
+
+
+      .title-intro{
+        font-weight: 900;
+        font-size: 43px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        color: var(--white);
+      }
+
+      .tile-pragraph{
+        color: var(--white);
+        font-weight: 400;
+      }
+
+      .web-btns{
+        margin-top: 50px;
+      }
+      
+      .web-btn a {
+        background-image: linear-gradient(109deg, #2661a7, #3d9cdb 100%);
+        height: 45px;
+        min-width: 200px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+      }
+
+      .tarrife-btn a{
+        display: -webkit-inline-box;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        border: none;
+        height: 45px;
+        cursor: pointer;
+        border-bottom: 2px solid;
+        color: var(--white);
+      }
+
+      .container-why-us{
+        margin-top: calc(0 * var(--gap));
+      }
+
+      .span-why-uns{
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 7.5rem;
+        color: var(--white);
+      }
+
+      .first-div-why-us{
+        padding-bottom: calc(5 * var(--gap));
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+      }
+
+      .h3-why-us{
+        margin-bottom: 15px;
+        color: var(--white);
+      }
+
+      .h3-why-us::after{
+        content: ".";
+        color: #ec4067;
+        font-weight: 900;
+        font-size: 25px;
+      }
+
+      .min-height-100{
+        min-height: 100vh;
+        margin: auto;
+      }
+
+      .price-table{
+        margin-top: calc(var(--gap) * 4);
+        padding-bottom: calc(var(--gap) * 4);
+      }
+
+      .price-table>h2{
+        text-align: center;
+        font-weight: 900;
+        margin: 0 auto 20px;
+        color: var(--white);
+      }
+
+      .price-table>p{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+
+      .col-price-table{
+        margin-bottom: calc(var(--gap) * 2);
+      }
+
+      .div-price-table{
+        border: 2px solid;
+        box-shadow: 0px 5px 20px 0 rgba(55,101,153,0.2);
+      }
+
+      .h-price-table{
+        text-align: center;
+        margin: calc(4 * var(--gap)) 0 calc(1 * var(--gap));
+        font-weight: 900;
+        font-size: 30px;
+        color: var(--white);
+      }
+
+      .b-price-table{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: calc(var(--gap) * 2);
+      }
+
+      .start-price-table{
+        margin-left: 7px;
+      }
+
+      .price-price-table{
+        font-size: 30px;
+        font-weight: 900;
+        color: #3fabe8;
+      }
+
+      .irt-price-table{
+        margin-right: 7px;
+        font-size: 12px;
+      }
+
+      .ul-price-table{
+        margin-right: 30px;
+        list-style: square;
+      }
+
+      .btn-price-table{
+        margin: 60px 40px 40px;
+      }
+
+      .order-btn-price-table{
+        display: block;
+        text-align: center;
+        padding: 8px;
+        border: 2px solid;
+        margin-bottom: 30px;
+        background-image: linear-gradient(109deg, #2661a7, #3d9cdb 100%);
+        color: white;
+      }
+
+      .more-btn-price-table{
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        display: none;
+      }
+
+      @media only screen and (max-width: 991px){
+        .title-intro {
+          font-size: 26px;
+          margin-bottom: 20px;
+          line-height: 1.8;
+        }
+        .padding-0{
+          padding: 0;
+        }
+        .web-btns{
+          margin-top: 40px;
+        }
+        .web-btn a {
+          margin-bottom: 20px;
+        }
+        .span-why-uns{
+          font-size: 26px;
+        }
+        
+      }
+
+    </style>
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <main class="my-page-main">
+        <article>
+
+          {{- partial "web-design-content.html" . }}
+          
+            {{- if .Content }}
+            <div class="post-content my-page-content">
+              {{- if not (.Param "disableAnchoredHeadings") }}
+              {{- partial "anchored_headings.html" .Content -}}
+              {{- else }}{{ .Content }}{{ end }}
+            </div>
+            {{- end }}
+        
+
+            {{- if (.Param "comments") }}
+            {{- partial "comments.html" . }}
+            {{- end }}
+            
+          </article>
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+
+</html>

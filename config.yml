@@ -1,0 +1,216 @@
+baseURL: https://alism.ir/
+languageCode: en
+title: Ali Motlagh
+theme: PaperMod
+
+
+#https://gohugo.io/content-management/urls/#permalink-configuration-values
+#permalinks:
+#  posts: /:filename/
+
+disqusShortname: alism-1
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+
+pygmentsUseClasses: true
+
+googleAnalytics: G-4XL1C0F7HT
+
+
+defaultContentLanguage: en
+languages:
+  
+
+  fa:
+    languagedirection: rtl
+    title: علی مطلق
+    weight: 2
+    copyright: "اینجا کپی رایت معنی نداره؛ لطفا اگه کپی می کنید، حداقل یه لینک بدید."
+    menu:
+      main:
+        - identifier: home
+          name: نوشته‌ها
+          url: /
+          weight: 25
+        - identifier: services
+          name: خدمات
+          url: /services/
+          weight: 26
+        - identifier: about
+          name: دربارهٔ من 
+          url: /about/
+          weight: 28
+        - identifier: tags
+          name: تگ‌ها
+          url: /tags/
+          weight: 30
+        - identifier: archives
+          name: آرشیو
+          url: /archives/
+          weight: 40
+
+    params:
+      author: 'علی مطلق'
+      #description: Tesla's Awesome Hugo Site
+      label:
+        text: " "
+        icon: '/assets/img/alish.png'
+        iconHeight: 35
+      # profile-mode
+      #CustomProfileMode:
+      ProfileMode:
+        enabled: false
+        title: "علی هستم"  # optional default will be site title
+        subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
+        imageUrl: "/assets/img/alish.jpg" # optional
+        imageTitle: "Ali Shahcheraghi" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        #buttons:
+        #  - name: طراحی سایت
+        #    url: "/archive"
+        #  - name: مشاوره سئو
+        #    url: "https://github.com/"
+
+      # home-info mode
+      homeInfoParams:
+        Title: "علی هستم"
+        Content:  به زودی اینجا یه چیزی در مورد خودم مینویسم
+      
+      
+      comments: true
+      #ShowShareButtons: true
+      ShowCodeCopyButtons: true
+      #hideSummary: true
+      ShowBreadCrumbs: true
+
+
+      
+
+      socialIcons: # optional
+        - name: "linkedin"
+          url: "#"
+        - name: "github"
+          url: "https://github.com/amotlagh"
+        - name: "stackoverflow"
+          url: "#"
+        - name: "rss"
+          url: "#"
+        - name: "twitter"
+          url: "#"
+        - name: "key"
+          url: "#"
+
+
+
+  en:
+    title: Ali Motlagh
+    weight: 1
+    #copyright: " "
+    menu:
+      main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 10
+        - identifier: work
+          name: Work
+          url: /work/
+          weight: 20
+        - identifier: contact
+          name: Contact
+          url: "mailto:hello@alism.ir"
+          weight: 30
+    params:
+      comments: true
+      author: Ali Motlagh
+      #description: Tesla's Awesome Hugo Site
+      label:
+        text: "Ali."
+        #icon: '/img/alish.png'
+        #iconHeight: 35
+      profileMode:
+        enabled: true
+        title: "Hi, I'm Ali." # optional default will be site title
+        subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
+Highly experienced in designing & developing custom Wordpress websites."
+        imageUrl: "img/alish.jpg" # optional
+        imageTitle: "Ali Shahcheraghi" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+
+
+      socialIcons: # optional
+        - name: "linkedin"
+          url: "#"
+        - name: "github"
+          url: "https://github.com/amotlagh"
+        - name: "stackoverflow"
+          url: "#"
+        - name: "rss"
+          url: "#"
+        - name: "twitter"
+          url: "#"
+        - name: "email"
+          url: "#"
+        - name: "key"
+          url: "#"
+
+
+
+
+
+
+
+
+
+params:
+  env: production
+  hideMeta: true
+  TocOpen: true
+  defaultTheme: auto
+  navigation:
+    help: Help
+  assets:
+    disableFingerprinting: false
+    favicon: "/assets/fav/favicon.ico"
+    favicon16x16:  "/assets/fav/favicon-16x16.png"
+    favicon32x32:  "/assets/fav/favicon-32x32.png"
+    apple_touch_icon:  "/assets/fav/apple-touch-icon.png"
+    safari_pinned_tab:  "/assets/fav/safari-pinned-tab.svg"
+  #disableScrollToTop: true
+  #ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  
+
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+        
+        
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+
