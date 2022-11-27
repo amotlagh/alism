@@ -12,7 +12,7 @@ PublishDate: "2022-11-09"
 Lastmod: "2022-11-10"
 
 cover:
-    image: "assets/img/2022/yoast-seo-premium.webp"
+    image: "static/img/2022/yoast-seo-premium.webp"
     alt: دانلود یوست سئو پرمیوم
     hidden: false
 

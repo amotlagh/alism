@@ -57,7 +57,7 @@ languages:
       #description: Tesla's Awesome Hugo Site
       label:
         text: " "
-        icon: '/assets/img/alish.png'
+        icon: '/static/img/alish.png'
         iconHeight: 35
       # profile-mode
       #CustomProfileMode:
@@ -65,7 +65,7 @@ languages:
         enabled: false
         title: "علی هستم"  # optional default will be site title
         subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
-        imageUrl: "/assets/img/alish.jpg" # optional
+        imageUrl: "/static/img/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -137,7 +137,7 @@ languages:
         title: "Hi, I'm Ali." # optional default will be site title
         subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
 Highly experienced in designing & developing custom Wordpress websites."
-        imageUrl: "img/alish.jpg" # optional
+        imageUrl: "/static/img/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size

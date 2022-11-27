@@ -7,12 +7,12 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 @font-face {
     font-family: Vazirmatn;
-    src: url(/fonts/Vazirmatn-Regular.woff2);
+    src: url(/statics/fonts/Vazirmatn-Regular.woff2);
     font-weight: 400;
 }
 @font-face {
     font-family: Vazirmatn;
-    src: url(/fonts/Vazirmatn-Bold.woff2);
+    src: url(/statics/fonts/Vazirmatn-Bold.woff2);
     font-weight: bold;
 }
 
