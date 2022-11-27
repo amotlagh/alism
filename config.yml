@@ -176,11 +176,11 @@ params:
     help: Help
   assets:
     disableFingerprinting: false
-    favicon: "/assets/fav/favicon.ico"
-    favicon16x16:  "/assets/fav/favicon-16x16.png"
-    favicon32x32:  "/assets/fav/favicon-32x32.png"
-    apple_touch_icon:  "/assets/fav/apple-touch-icon.png"
-    safari_pinned_tab:  "/assets/fav/safari-pinned-tab.svg"
+    favicon: "/static/fav/favicon.ico"
+    favicon16x16static/fav/favicon-16x16.png"
+    favicon32x32:  "/static/fav/favicon-32x32.png"
+    apple_touch_icon:  "/static/fav/apple-touch-icon.png"
+    safari_pinned_tab:  "/static/fav/safari-pinned-tab.svg"
   #disableScrollToTop: true
   #ShowRssButtonInSectionTermList: true
   ShowToc: true
