@@ -11,7 +11,7 @@ PublishDate: "2022-11-09"
 Lastmod: "2022-11-10"
 
 cover:
-    image: "static/img/2022/cannibalization.jpg"
+    image: "/img/2022/cannibalization.jpg"
     alt: کنیبالیزیشن سئو
     hidden: false
 

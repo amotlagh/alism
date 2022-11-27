@@ -57,7 +57,7 @@ languages:
       #description: Tesla's Awesome Hugo Site
       label:
         text: " "
-        icon: '/static/img/alish.png'
+        icon: '/img/alish.png'
         iconHeight: 35
       # profile-mode
       #CustomProfileMode:
@@ -65,7 +65,7 @@ languages:
         enabled: false
         title: "علی هستم"  # optional default will be site title
         subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
-        imageUrl: "/static/img/alish.jpg" # optional
+        imageUrl: "/img/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -137,7 +137,7 @@ languages:
         title: "Hi, I'm Ali." # optional default will be site title
         subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
 Highly experienced in designing & developing custom Wordpress websites."
-        imageUrl: "/static/img/alish.jpg" # optional
+        imageUrl: "/img/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -176,11 +176,11 @@ params:
     help: Help
   assets:
     disableFingerprinting: false
-    favicon: "/static/fav/favicon.ico"
-    favicon16x16:  "/static/fav/favicon-16x16.png"
-    favicon32x32:  "/static/fav/favicon-32x32.png"
-    apple_touch_icon:  "/static/fav/apple-touch-icon.png"
-    safari_pinned_tab:  "/static/fav/safari-pinned-tab.svg"
+    favicon: "/img/fav/favicon.ico"
+    favicon16x16:  "/img/fav/favicon-16x16.png"
+    favicon32x32:  "/img/fav/favicon-32x32.png"
+    apple_touch_icon:  "/img/fav/apple-touch-icon.png"
+    safari_pinned_tab:  "/img/fav/safari-pinned-tab.svg"
   #disableScrollToTop: true
   #ShowRssButtonInSectionTermList: true
   ShowToc: true
