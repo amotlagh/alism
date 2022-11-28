@@ -6,17 +6,17 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 @font-face {
     font-family: Vazirmatn;
-    src: url(/fonts/Vazirmatn-Regular.woff2);
+    src: url(/assets/fonts/Vazirmatn-Regular.woff2);
     font-weight: 400;
 }
 @font-face {
     font-family: Vazirmatn;
-    src: url(/fonts/Vazirmatn-Bold.woff2);
+    src: url(/assets/fonts/Vazirmatn-Bold.woff2);
     font-weight: bold;
 }
 
 body {
-    font-family: 'Vazirmatn', -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: 'Ubuntu','Vazirmatn',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 

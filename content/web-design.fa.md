@@ -11,7 +11,7 @@ url: web-design
 ShowBreadCrumbs: false
 comments: false
 cover:
-    image: "/img/2022/yoast-seo-premium.webp"
+    image: "/images/2022/yoast-seo-premium.webp"
     alt: طراحی وب سایت
     hidden: false
 ---

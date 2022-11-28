@@ -57,7 +57,7 @@ languages:
       #description: Tesla's Awesome Hugo Site
       label:
         text: " "
-        icon: '/img/alish.png'
+        icon: '/images/alish.png'
         iconHeight: 35
       # profile-mode
       #CustomProfileMode:
@@ -65,7 +65,7 @@ languages:
         enabled: false
         title: "علی هستم"  # optional default will be site title
         subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
-        imageUrl: "/img/alish.jpg" # optional
+        imageUrl: "/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -78,10 +78,12 @@ languages:
       # home-info mode
       homeInfoParams:
         Title: "علی هستم"
-        Content:  به زودی اینجا یه چیزی در مورد خودم مینویسم
+        Content: " به زودی اینجا یه چیزی در مورد خودم مینویسم
+
+
+      "
       
-      
-      comments: false
+      comments: true
       #ShowShareButtons: true
       ShowCodeCopyButtons: true
       #hideSummary: true
@@ -96,13 +98,15 @@ languages:
         - name: "github"
           url: "https://github.com/amotlagh"
         - name: "stackoverflow"
-          url: "#"
+          url: "https://stackoverflow.com/users/15359171/"
         - name: "rss"
-          url: "#"
+          url: "index.xml"
         - name: "twitter"
           url: "#"
+        - name: "email"
+          url: "mailto:alish@outlook.at"
         - name: "key"
-          url: "#"
+          url: "/0xF5249EF4E609DC00.asc"
 
 
 
@@ -130,14 +134,14 @@ languages:
       #description: Tesla's Awesome Hugo Site
       label:
         text: "Ali."
-        #icon: '/img/alish.png'
+        #icon: '/images/alish.png'
         #iconHeight: 35
       profileMode:
         enabled: true
         title: "Hi, I'm Ali." # optional default will be site title
         subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
 Highly experienced in designing & developing custom Wordpress websites."
-        imageUrl: "/img/alish.jpg" # optional
+        imageUrl: "/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -149,15 +153,15 @@ Highly experienced in designing & developing custom Wordpress websites."
         - name: "github"
           url: "https://github.com/amotlagh"
         - name: "stackoverflow"
-          url: "#"
+          url: "https://stackoverflow.com/users/15359171/"
         - name: "rss"
-          url: "#"
+          url: "index.xml"
         - name: "twitter"
           url: "#"
         - name: "email"
-          url: "#"
+          url: "mailto:alish@outlook.at"
         - name: "key"
-          url: "#"
+          url: "/0xF5249EF4E609DC00.asc"
 
 
 
@@ -170,23 +174,25 @@ Highly experienced in designing & developing custom Wordpress websites."
 params:
   env: production
   hideMeta: true
-  TocOpen: true
   defaultTheme: auto
   navigation:
     help: Help
   assets:
     disableFingerprinting: true
-    favicon: "/img/fav/favicon.ico"
-    favicon16x16:  "/img/fav/favicon-16x16.png"
-    favicon32x32:  "/img/fav/favicon-32x32.png"
-    apple_touch_icon:  "/img/fav/apple-touch-icon.png"
-    safari_pinned_tab:  "/img/fav/safari-pinned-tab.svg"
+    favicon: "/assets/images/favicon.ico"
+    favicon16x16:  "/assets/images/favicon-16x16.png"
+    favicon32x32:  "/assets/images/favicon-32x32.png"
+    apple_touch_icon:  "/assets/images/apple-touch-icon.png"
+    safari_pinned_tab:  "/assets/images/safari-pinned-tab.svg"
   #disableScrollToTop: true
   #ShowRssButtonInSectionTermList: true
   ShowToc: true
+  #TocOpen: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   cover:
+    linkFullImages: false
+    relative: true
     hiddenInList: true
     responsiveImages: true
   
@@ -201,19 +207,9 @@ outputs:
         
         
 
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
 
 
 markup:
   goldmark:
     renderer:
       unsafe: true
-    parser:
-      attribute:
-        block: true
-        title: true
-
