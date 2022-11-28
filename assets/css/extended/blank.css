@@ -16,7 +16,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 body {
-    font-family: 'Ubuntu', 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn', -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 
