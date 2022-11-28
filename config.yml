@@ -81,7 +81,7 @@ languages:
         Content:  به زودی اینجا یه چیزی در مورد خودم مینویسم
       
       
-      comments: true
+      comments: false
       #ShowShareButtons: true
       ShowCodeCopyButtons: true
       #hideSummary: true
@@ -125,7 +125,7 @@ languages:
           url: "mailto:hello@alism.ir"
           weight: 30
     params:
-      comments: true
+      comments: false
       author: Ali Motlagh
       #description: Tesla's Awesome Hugo Site
       label:
@@ -175,7 +175,7 @@ params:
   navigation:
     help: Help
   assets:
-    disableFingerprinting: false
+    disableFingerprinting: true
     favicon: "/img/fav/favicon.ico"
     favicon16x16:  "/img/fav/favicon-16x16.png"
     favicon32x32:  "/img/fav/favicon-32x32.png"
