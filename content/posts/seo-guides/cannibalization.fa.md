@@ -13,7 +13,9 @@ Lastmod: "2022-11-10"
 cover:
     image: "/img/2022/cannibalization.jpg"
     alt: کنیبالیزیشن سئو
-    hidden: false
+    #hidden: true
+    responsiveImages: true
+    relative: true
 
 tags:
     - آموزش سئو

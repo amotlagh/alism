@@ -186,6 +186,9 @@ params:
   ShowToc: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
+  cover:
+    hiddenInList: true
+    responsiveImages: true
   
 
 
