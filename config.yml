@@ -57,8 +57,8 @@ languages:
       #description: Tesla's Awesome Hugo Site
       label:
         text: " "
-        icon: '/images/alish.png'
-        iconHeight: 35
+        icon: "/assets/images/favicon-32x32.png"
+        iconHeight: 32
       # profile-mode
       #CustomProfileMode:
       ProfileMode:

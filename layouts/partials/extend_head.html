@@ -4,3 +4,64 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+<style>
+    @font-face {
+        font-family: Vazirmatn;
+        src: url(/assets/fonts/Vazirmatn-Regular.woff2);
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: Vazirmatn;
+        src: url(/assets/fonts/Vazirmatn-Bold.woff2);
+        font-weight: bold;
+    }
+
+    body {
+        font-family: 'Ubuntu','Vazirmatn',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    }
+
+
+    .post-single,.post-content table th{
+        line-height: 1.8;
+        font-size: 18px;
+    }
+
+    .paginav .prev, .paginav .next {
+        padding-bottom: 10px;
+    }
+
+    .post-content h4{
+        font-size: 18px;
+    }
+
+    .post-content img {
+        margin: 1rem auto;
+    }
+
+    .paginav .title {
+        letter-spacing: 0px;
+    }
+
+    .copy-code {
+        padding: 5px 5px;
+    }
+
+    .paginav {
+        min-height: 70px;
+    }
+
+    .top-link {
+        bottom: 45px;
+        padding: 11px;
+    }
+
+
+    @media only screen and (max-width: 600px){
+        .post-single,.post-content table th{
+            font-size: 17px;
+        }
+
+    }
+</style>
