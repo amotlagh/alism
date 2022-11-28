@@ -56,9 +56,9 @@ languages:
       author: 'علی مطلق'
       #description: Tesla's Awesome Hugo Site
       label:
-        text: " "
-        icon: "/assets/images/favicon-32x32.png"
-        iconHeight: 32
+        text: "علی مطلق"
+        #icon: "/assets/images/favicon-32x32.png"
+        #iconHeight: 32
       # profile-mode
       #CustomProfileMode:
       ProfileMode:
