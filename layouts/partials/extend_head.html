@@ -1,18 +1,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+                
 
 
 <style>
+    
 
-    body {
-        font-family: 'Ubuntu','Vazirmatn',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    body * {
+        -webkit-font-smoothing: antialiased;
     }
 
+    html[dir="auto"] body{
+        font-family: 'Rubik',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    }
 
-    .post-single,.post-content table th{
+    html[dir="rtl"] body{
+        font-family: 'Vazirmatn',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    }
+
+    html[dir="rtl"] .post-single,.post-content table th{
         line-height: 1.8;
-        font-size: 18px;
+        font-size: 17.6px;
+    }
+
+    html[dir="rtl"] .post-single p, html[dir="rtl"] .post-single li, html[dir="rtl"] .post-single .post-description {
+        text-align: justify;
+    }
+
+    #menu .active {
+    border-bottom: 1px solid;
     }
 
     .paginav .prev, .paginav .next {
@@ -44,11 +61,14 @@
         padding: 11px;
     }
 
-
     @media only screen and (max-width: 600px){
-        .post-single,.post-content table th{
+        html[dir="rtl"] .post-single,.post-content table th{
             font-size: 17px;
         }
 
     }
+
 </style>
+
+
+

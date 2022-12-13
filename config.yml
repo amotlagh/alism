@@ -17,7 +17,7 @@ enableEmoji: true
 
 pygmentsUseClasses: true
 
-googleAnalytics: G-4XL1C0F7HT
+#googleAnalytics: G-4XL1C0F7HT
 
 
 defaultContentLanguage: en
@@ -65,7 +65,7 @@ languages:
         enabled: false
         title: "علی هستم"  # optional default will be site title
         subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
-        imageUrl: "/images/alish.jpg" # optional
+        imageUrl: "/assets/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -84,7 +84,7 @@ languages:
       "
       
       comments: true
-      #ShowShareButtons: true
+      ShowShareButtons: true
       ShowCodeCopyButtons: true
       #hideSummary: true
       ShowBreadCrumbs: true
@@ -97,8 +97,6 @@ languages:
           url: "#"
         - name: "github"
           url: "https://github.com/amotlagh"
-        - name: "stackoverflow"
-          url: "https://stackoverflow.com/users/15359171/"
         - name: "rss"
           url: "index.xml"
         - name: "twitter"
@@ -141,7 +139,7 @@ languages:
         title: "Hi, I'm Ali." # optional default will be site title
         subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
 Highly experienced in designing & developing custom Wordpress websites."
-        imageUrl: "/images/alish.jpg" # optional
+        imageUrl: "/assets/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -152,8 +150,6 @@ Highly experienced in designing & developing custom Wordpress websites."
           url: "#"
         - name: "github"
           url: "https://github.com/amotlagh"
-        - name: "stackoverflow"
-          url: "https://stackoverflow.com/users/15359171/"
         - name: "rss"
           url: "index.xml"
         - name: "twitter"
