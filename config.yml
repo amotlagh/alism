@@ -83,7 +83,7 @@ languages:
 
       "
       
-      comments: true
+      comments: false
       ShowShareButtons: true
       ShowCodeCopyButtons: true
       #hideSummary: true
