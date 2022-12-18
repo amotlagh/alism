@@ -1,12 +1,10 @@
-baseURL: https://alism.ir/
+baseURL: https://alism.ir
 languageCode: en
 title: Ali Motlagh
 theme: PaperMod
 
 
-#https://gohugo.io/content-management/urls/#permalink-configuration-values
-#permalinks:
-#  posts: /:filename/
+
 
 disqusShortname: alism-1
 
@@ -22,117 +20,118 @@ pygmentsUseClasses: true
 
 defaultContentLanguage: en
 languages:
-  
 
   fa:
     languagedirection: rtl
+    languageAltTitle: "فارسی"
     title: علی مطلق
     weight: 2
     copyright: "اینجا کپی رایت معنی نداره؛ لطفا اگه کپی می کنید، حداقل یه لینک بدید."
     menu:
       main:
         - identifier: home
-          name: نوشته‌ها
+          name: خانه
           url: /
-          weight: 25
+          weight: 10
         - identifier: services
           name: خدمات
           url: /services/
-          weight: 26
+          weight: 20
+        - identifier: posts
+          name: بلاگ
+          url: /posts/
+          weight: 50
         - identifier: about
           name: دربارهٔ من 
           url: /about/
-          weight: 28
+          weight: 60
         - identifier: tags
-          name: تگ‌ها
+          name:  تگ‌ها 
           url: /tags/
-          weight: 30
+          weight: 70
         - identifier: archives
           name: آرشیو
           url: /archives/
-          weight: 40
+          weight: 80
 
     params:
       author: 'علی مطلق'
       #description: Tesla's Awesome Hugo Site
       label:
-        text: "علی مطلق"
-        #icon: "/assets/images/favicon-32x32.png"
+        text: "علی مطلق" 
+        #icon: "/assets/images/favicon.ico"
         #iconHeight: 32
       # profile-mode
-      #CustomProfileMode:
+      CustomProfileMode:
       ProfileMode:
-        enabled: false
+        enabled: true
         title: "علی هستم"  # optional default will be site title
         subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
         imageUrl: "/assets/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        #buttons:
-        #  - name: طراحی سایت
-        #    url: "/archive"
-        #  - name: مشاوره سئو
-        #    url: "https://github.com/"
+        buttons:
+          - name: طراحی سایت
+            url: "https://webshark.ir/web-design/"
+          - name: سئو و بهینه‌سازی
+            url: "https://webshark.ir/seo-service/"
 
       # home-info mode
-      homeInfoParams:
-        Title: "علی هستم"
-        Content: " به زودی اینجا یه چیزی در مورد خودم مینویسم
+      #homeInfoParams:
+      #  Title: "علی هستم"
+      #  Content: " به زودی اینجا یه چیزی در مورد خودم مینویسم
 
 
-      "
       
-      comments: false
+      comments: true
       ShowShareButtons: true
       ShowCodeCopyButtons: true
       #hideSummary: true
       ShowBreadCrumbs: true
 
 
-      
-
-      socialIcons: # optional
-        - name: "linkedin"
-          url: "#"
-        - name: "github"
-          url: "https://github.com/amotlagh"
+      socialIcons:
+        - name: "key"
+          url: "/0xF5249EF4E609DC00.asc"
+        - name: "email"
+          url: "mailto:alish@outlook.at"
         - name: "rss"
           url: "index.xml"
         - name: "twitter"
           url: "#"
-        - name: "email"
-          url: "mailto:alish@outlook.at"
-        - name: "key"
-          url: "/0xF5249EF4E609DC00.asc"
-
+        - name: "github"
+          url: "https://github.com/amotlagh"
+        - name: "linkedin"
+          url: "#"
 
 
   en:
+    languageAltTitle: "English"
     title: Ali Motlagh
     weight: 1
     #copyright: " "
     menu:
       main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 1
         - identifier: about
           name: About
           url: /about/
-          weight: 10
+          weight: 20
         - identifier: work
           name: Work
           url: /work/
-          weight: 20
-        - identifier: contact
-          name: Contact
-          url: "mailto:hello@alism.ir"
-          weight: 30
+          weight: 10
     params:
       comments: false
       author: Ali Motlagh
       #description: Tesla's Awesome Hugo Site
       label:
         text: "Ali."
-        #icon: '/images/alish.png'
+        #icon: "/assets/images/favicon.ico"
         #iconHeight: 35
       profileMode:
         enabled: true
@@ -183,16 +182,14 @@ params:
   #disableScrollToTop: true
   #ShowRssButtonInSectionTermList: true
   ShowToc: true
-  #TocOpen: true
+  TocOpen: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   cover:
     linkFullImages: false
     relative: true
-    hiddenInList: true
+    hiddenInList: false
     responsiveImages: true
-  
-
 
 
 outputs:
