@@ -48,10 +48,6 @@ html[dir="rtl"] .post-single,.post-content table th{
     line-height: 2;
 }
 
-html[dir="rtl"] button#theme-toggle {
-  margin: 6px 4px 0px;
-}
-
 .paginav .prev, .paginav .next {
     padding-bottom: 10px;
 }
