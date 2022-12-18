@@ -10,7 +10,7 @@ summary: آموزش رایگان تکنیک های حرفه‌ای سئو
 #    alt: " همنوع خواری یا کنیبالیزیشن (cannibalization) چیست؟ "
 #    hidden: false
 #ShowBreadCrumbs: false
-weight: 1
+#weight: 1
 ---
 
 **با انتخاب هریک از صفحات زیر اطلاعات بیشتری در مورد سئو کسب خواهید کرد.**

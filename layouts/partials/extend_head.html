@@ -1,0 +1,90 @@
+<style>
+
+    @font-face {
+      font-family: Vazir;
+      src: url('/assets/fonts/Vazirmatn-NL-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: Vazir;
+      src: url('/assets/fonts/Vazirmatn-NL-Bold.woff2') format('woff2');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: Rubik;
+      src: url('/assets/fonts/Rubik-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: Rubik;
+      src: url('/assets/fonts/Rubik-Bold.woff2') format('woff2');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body * {
+        -webkit-font-smoothing: antialiased;
+    }
+
+    html[dir="auto"] body{
+        font-family: 'Rubik',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    }
+
+    html[dir="rtl"] body{
+        font-family: 'Vazir',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    }
+
+    html[dir="rtl"] .post-single,.post-content table th{
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .paginav .prev, .paginav .next {
+        padding-bottom: 10px;
+    }
+
+    .post-content h4{
+        font-size: 18px;
+    }
+
+    .post-content img {
+        margin: 1rem auto;
+    }
+
+    .paginav .title {
+        letter-spacing: 0px;
+    }
+
+    .copy-code {
+        padding: 5px 5px;
+    }
+
+    .paginav {
+        min-height: 70px;
+    }
+
+    .top-link {
+        bottom: 45px;
+        padding: 11px;
+    }
+
+    @media only screen and (max-width: 600px){
+        html[dir="rtl"] .post-single,.post-content table th{
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+    }
+
+
+</style>

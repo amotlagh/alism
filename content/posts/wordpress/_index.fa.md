@@ -10,7 +10,7 @@ summary: "
 "
 
 
-weight: 2
+#weight: 2
 
 #cover:
 #    image: "/img/cannibalization.jpg"
