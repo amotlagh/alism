@@ -14,21 +14,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: Yekan;
-  src: url('/assets/fonts/Yekan-Bakh-Medium.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Yekan;
-  src: url('/assets/fonts/Yekan-Bakh-Heavy.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: Rubik;
@@ -55,7 +40,7 @@ html[dir="auto"] body{
 }
 
 html[dir="rtl"] body{
-    font-family: 'Yekan',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: 'Vazir',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 html[dir="rtl"] .post-single,.post-content table th{
