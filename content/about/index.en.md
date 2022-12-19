@@ -20,6 +20,7 @@ searchHidden: true
 #draft: false
 ShowBreadCrumbs: false
 comments: false
+disableShare: true
 ---
 
 ## Lorem ipsum dolor

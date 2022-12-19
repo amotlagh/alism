@@ -33,26 +33,15 @@ languages:
           name: خانه
           url: /
           weight: 10
-        - identifier: services
-          name: خدمات
-          url: /services/
-          weight: 20
-        - identifier: posts
-          name: بلاگ
-          url: /posts/
-          weight: 50
-        - identifier: about
-          name: دربارهٔ من 
-          url: /about/
-          weight: 60
         - identifier: tags
           name:  تگ‌ها 
           url: /tags/
-          weight: 70
-        - identifier: archives
-          name: آرشیو
-          url: /archives/
-          weight: 80
+          weight: 26
+        - identifier: posts
+          name: بلاگ
+          url: /posts/
+          weight: 25
+
 
     params:
       author: 'علی مطلق'
@@ -62,11 +51,10 @@ languages:
         #icon: "/assets/images/favicon.ico"
         #iconHeight: 32
       # profile-mode
-      CustomProfileMode:
       ProfileMode:
         enabled: true
-        title: "علی هستم"  # optional default will be site title
-        subtitle:  کنیبالیزیشن یا هم نوع خواری وقتی است که صفحات یک سایت با هم به رقابت می‌پردازند و باعث افت رتبه کلمات کلیدی یکدیگر می‌شوند. در این نوشته با نحوه تشخیص همنوع خواری و همچنین نحوه رفع آن آشنا می‌شوید.
+        title: Ali Motlagh  # optional default will be site title
+        subtitle: Front-End and WordPress Developer
         imageUrl: "/assets/images/alish.jpg" # optional
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
@@ -95,7 +83,7 @@ languages:
         - name: "key"
           url: "/0xF5249EF4E609DC00.asc"
         - name: "email"
-          url: "mailto:alish@outlook.at"
+          url: "mailto:alimotlagh@protonmail.com"
         - name: "rss"
           url: "index.xml"
         - name: "twitter"
@@ -199,7 +187,14 @@ outputs:
     - JSON # is necessary
         
         
-
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys: ["title", "permalink", "summary", "content"] ##  can be less but not more than shown in list
 
 
 markup:
