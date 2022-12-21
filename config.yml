@@ -33,14 +33,22 @@ languages:
           name: خانه
           url: /
           weight: 10
+        - identifier: web-design
+          name: طراحی سایت
+          url: /services/web-design/
+          weight: 20
+        - identifier: seo
+          name: سئو و بهینه‌سازی
+          url: /seo/
+          weight: 30
         - identifier: tags
           name:  تگ‌ها 
           url: /tags/
-          weight: 26
+          weight: 50
         - identifier: posts
           name: بلاگ
           url: /posts/
-          weight: 25
+          weight: 60
 
 
     params:
@@ -77,6 +85,7 @@ languages:
       ShowCodeCopyButtons: true
       #hideSummary: true
       ShowBreadCrumbs: true
+      ShowRelatedContent: true
 
 
       socialIcons:
@@ -113,6 +122,10 @@ languages:
           name: Work
           url: /work/
           weight: 10
+        - identifier: posts
+          name: Blog
+          url: /posts/
+          weight: 50
     params:
       comments: false
       author: Ali Motlagh
@@ -178,7 +191,6 @@ params:
     relative: true
     hiddenInList: false
     responsiveImages: true
-
 
 outputs:
   home:

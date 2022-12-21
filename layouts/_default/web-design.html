@@ -2,10 +2,14 @@
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
 <head>
-    {{- partial "my-page-head.html" . }}
+    {{- partial "head.html" . }}
     <link rel="stylesheet" href="/assets/styles/bootstrap-grid.min.css">
 
     <style>
+
+      .list {
+        background: #ffffff;
+      }
 
       .dark {
         --theme: #121417;
@@ -16,35 +20,32 @@
       }
 
       @font-face {
-        font-family: Estedad;
-        src: url(/assets/fonts/Estedad-Light.woff2);
-        font-weight: 300;
-      }
-      @font-face {
-        font-family: Estedad;
-        src: url(/assets/fonts/Estedad-Regular.woff2);
+        font-family: Yekan;
+        src: url('/assets/fonts/Yekan-Bakh-Medium.woff2') format('woff2');
         font-weight: 400;
+        font-style: normal;
+        font-display: swap;
       }
+
       @font-face {
-        font-family: Estedad;
-        src: url(/assets/fonts/Estedad-Bold.woff2);
+        font-family: Yekan;
+        src: url('/assets/fonts/Yekan-Bakh-Heavy.woff2') format('woff2');
         font-weight: bold;
-      }
-      @font-face {
-        font-family: Estedad;
-        src: url(/assets/fonts/Estedad-Black.woff2);
-        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
       }
 
 
       body .my-page-main{
         font-size: 16px;
-        font-family: 'Estedad', sans-serif !important;
+        font-family: 'Yekan', 'Rubik', sans-serif !important;
+        text-align: justify;
         font-feature-settings: "kern", "calt", "rvrn", "ss03";
-        font-weight: 300;
         box-shadow: 0px 4px 20px -5px var(--black);
         border-top: 1px solid var(--header-gray);
+        letter-spacing: -0.5px;
       }
+      
 
       .min-height-100-first-section {
         min-height: 600px;
@@ -102,6 +103,9 @@
         align-items: center;
         color: white;
         cursor: pointer;
+        border-radius: var(--radius);
+        padding: 13px 0 8px;
+        font-weight: bold;
       }
 
       .tarrife-btn a{
@@ -139,13 +143,14 @@
       .h3-why-us{
         margin-bottom: 15px;
         color: var(--white);
+        font-size: 26px;
       }
 
       .h3-why-us::after{
         content: ".";
         color: #ec4067;
         font-weight: 900;
-        font-size: 25px;
+        font-size: 24px;
       }
 
       .min-height-100{
@@ -158,14 +163,15 @@
         padding-bottom: calc(var(--gap) * 4);
       }
 
-      .price-table>h2{
+      .price-table > h2{
         text-align: center;
         font-weight: 900;
         margin: 0 auto 20px;
         color: var(--white);
+        font-size: 42px;
       }
 
-      .price-table>p{
+      .price-table > p{
         text-align: center;
         max-width: 600px;
         margin: 0 auto 40px;
@@ -177,7 +183,8 @@
 
       .div-price-table{
         border: 2px solid;
-        box-shadow: 0px 5px 20px 0 rgba(55,101,153,0.2);
+        box-shadow: 6px 7px 0 0 rgb(55 101 153 / 20%);
+        border-radius: var(--radius);
       }
 
       .h-price-table{
@@ -200,9 +207,9 @@
       }
 
       .price-price-table{
-        font-size: 30px;
+        font-size: 52px;
         font-weight: 900;
-        color: #3fabe8;
+        color: #0dcaf0;
       }
 
       .irt-price-table{
@@ -222,11 +229,12 @@
       .order-btn-price-table{
         display: block;
         text-align: center;
-        padding: 8px;
-        border: 2px solid;
+        padding: 10px 0 6px;
         margin-bottom: 30px;
         background-image: linear-gradient(109deg, #2661a7, #3d9cdb 100%);
         color: white;
+        border-radius: var(--radius);
+        font-weight: bold;
       }
 
       .more-btn-price-table{
@@ -235,6 +243,26 @@
         text-decoration: underline;
         display: none;
       }
+
+      .seo-blog, .seo-posts, .seo-posts-nav{
+        max-width: 720px;
+        margin: auto ;
+        padding: 0 var(--gap);
+      }
+
+      .seo-posts{
+        text-align: right;
+      }
+
+      .seo-posts .post-entry{
+        padding: calc(var(--gap) / 2);
+        box-shadow: 0 0 6px 2px rgb(0 0 0 / 7%);
+      }
+
+      .seo-posts-nav{
+        padding-bottom: 50px;
+      }
+
 
       @media only screen and (max-width: 991px){
         .title-intro {
@@ -254,7 +282,26 @@
         .span-why-uns{
           font-size: 26px;
         }
-        
+
+      }
+
+      @media only screen and (max-width: 900px){
+        .top-link {
+          bottom: -35px;
+        }
+      }
+
+      @media only screen and (min-width: 900px){
+        .seo-posts{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          grid-column-gap: calc(var(--gap) / 2);
+        }
+        .post-entry{
+          margin-bottom: calc(var(--gap) / 2);
+        }
+
       }
 
     </style>

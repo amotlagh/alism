@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+    <link rel="stylesheet" href="/assets/styles/bootstrap-grid.min.css">
+
+    <style>
+      
+
+      .list {
+        background: #ffffff;
+      }
+
+      .dark {
+        --theme: #121417;
+        --white: rgb(255 255 255);
+        --black: #000000;
+        --header-gray: #2b2e36;
+      }
+
+      @font-face {
+        font-family: Yekan;
+        src: url('/assets/fonts/Yekan-Bakh-Medium.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: Yekan;
+        src: url('/assets/fonts/Yekan-Bakh-Heavy.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        font-size: 16px;
+        font-family: 'Yekan', 'Rubik', sans-serif !important;
+      }
+
+      body .my-page-main{
+        box-shadow: 0px 4px 20px -5px var(--black);
+        border-top: 1px solid var(--header-gray);
+        letter-spacing: -0.5px;
+      }
+      
+      button#theme-toggle {
+        margin: 0px auto -5px;
+      }
+
+      .first-section{
+        background-image: url(/assets/images/seo-svg.svg) ;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+        background-color: var(--theme);
+      }
+
+      .min-height-100-first-section {
+        min-height: 600px;
+        margin: auto;
+      }
+
+      .first-row-div{
+        text-align: center;
+      }
+
+      .my-page-content {
+          position: relative;
+          max-width: calc(var(--main-width) + var(--gap) * 2);
+          margin-left: auto;
+          margin-right: auto;
+          padding: var(--gap);
+      }
+
+      #disqus_thread{
+          max-width: calc(var(--main-width) + var(--gap) * 2);
+          margin-left: auto;
+          margin-right: auto;
+          padding: var(--gap);
+          margin-top: 56px;
+      } 
+
+      .title-intro{
+        font-weight: 900;
+        font-size: 43px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        color: var(--white);
+      }
+
+      .tile-pragraph{
+        color: var(--white);
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      .web-btns{
+        max-width: 510px;
+        margin: 50px auto 0;
+      }
+      
+      .web-btn a {
+        height: 55px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        padding: 13px 0 8px;
+        font-weight: bold;
+        background-image: linear-gradient(70deg, #006c7f, #0e8d99, #006c7f);
+        font-size: 18px;
+      }
+
+      .tarrife-btn a{
+        display: -webkit-inline-box;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        height: 55px;
+        cursor: pointer;
+        border-bottom: 2px solid;
+        border: 2px solid;
+        width: 100%;
+        padding: 13px 0 8px;
+        border-color: #1CADB2;
+        color: #1CADB2;
+      }
+
+      .container-why-us{
+        padding-bottom: calc(4 * var(--gap));
+        margin-top: calc(0 * var(--gap));
+      }
+
+      .span-why-uns{
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 7.5rem;
+        color: var(--white);
+      }
+
+      .first-div-why-us{
+        padding-bottom: calc(5 * var(--gap));
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+      }
+
+      .h3-why-us{
+        margin-bottom: 15px;
+        color: var(--white);
+        font-size: 26px;
+      }
+
+      .h3-why-us::after{
+        content: ".";
+        color: #ec4067;
+        font-weight: 900;
+        font-size: 35px;
+      }
+
+      .min-height-100{
+        margin: auto;
+        max-width: 1300px;
+      }
+
+      .price-table{
+        padding-top: calc(var(--gap) * 4);
+        padding-bottom: calc(var(--gap) * 4);
+        background-color: #e2f3f3;
+      }
+
+      .price-table > h2{
+        text-align: center;
+        font-weight: 900;
+        margin: 0 auto 20px;
+        color: #044154;
+        font-size: 64px;
+      }
+
+      .price-table > p{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        color: #044154;
+      }
+
+      .col-price-table{
+        margin-bottom: calc(var(--gap) * 2);
+      }
+
+      .div-price-table{
+        border: 2px solid #044154;
+        box-shadow: 6px 6px 0 0 #19875421;
+        background: white;
+        transform: translateY(0);
+        transition: transform 0.4s;
+      }
+
+      .div-price-table:hover{
+        transform: translateY(-10px);
+      }
+
+
+      .h-price-table{
+        text-align: center;
+        padding: 36px 0 30px;
+        font-weight: 900;
+        font-size: 30px;
+        color: #fff;
+        background-image: linear-gradient(26deg, #009a9a, #066262 100%);
+      }
+
+      .b-price-table{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: calc(var(--gap) * 1.5);
+        background-color: #E8F0F0;
+        border-bottom: 2px dotted #044154;
+      }
+
+      .start-price-table{
+        margin-left: 7px;
+        color: #044154;
+      }
+
+      .price-price-table{
+        font-size: 52px;
+        font-weight: 900;
+        color: #044154;
+      }
+
+      .irt-price-table{
+        margin-right: 7px;
+        font-size: 12px;
+        color: #044154;
+      }
+
+      .ul-price-table{
+        margin-right: 30px;
+        list-style: square;
+        color: #044154;
+      }
+
+      .ul-price-table li::marker{
+        color: #FE8433;
+      }
+
+      .btn-price-table{
+        margin: 35px 40px 30px;
+      }
+
+      .order-btn-price-table{
+        display: block;
+        text-align: center;
+        padding: 10px 0 6px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: #044154 ;
+        background-color: #54E8CC ;
+        border: 2px solid #3BAE98 ;
+      }
+
+      .more-btn-price-table{
+        text-align: right;
+        padding-right: 5px;
+        margin-left: 5px;
+        color: #044154;
+      }
+
+      .seo-blog, .seo-posts, .seo-posts-nav{
+        max-width: 720px;
+        margin: auto ;
+        padding: 0 var(--gap);
+      }
+
+      .seo-posts{
+        text-align: right;
+      }
+
+      .seo-posts .post-entry{
+        box-shadow: 0 0 6px 2px rgb(0 0 0 / 7%);
+      }
+
+      .seo-posts-nav{
+        padding-bottom: 50px;
+      }
+
+      ul {
+        list-style-type: square;
+      }
+
+      .cont-f-form{
+        padding: calc(var(--gap) * 5) var(--gap);
+        margin-bottom: calc(var(--gap) * 5);
+        background: url(/assets/images/seo-texture.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        background-color: #fff9e8;
+        
+      }
+
+      .cont-f-form span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cont-f-form span h3{
+        color: black;
+        display: inline;
+        background-color: white;
+        border: 2px solid #044154;
+        padding: 10px 25px;
+        position: relative;
+        top: 22px;
+        z-index: 99;
+      }
+
+      #cont-form{
+        color: #044154;
+        max-width: 672px;
+        margin: auto;
+        padding: var(--gap) var(--gap) calc(var(--gap) * 2) ;
+        box-shadow: 6px 6px 0 0 #f3e8c8;
+        position: relative;
+        background-color: white;
+        border: 2px dashed #044154;
+      }
+      
+
+      #cont-form .cont-form-p{
+        padding: var(--gap);
+        background: #54E8CC;
+        margin-bottom: var(--gap);
+        margin-top: 20px;
+      }
+
+      #serviceForm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: calc(var(--gap) * 1.5);
+      }
+
+      #serviceForm .form-group{
+        position: relative;
+      }
+
+      #serviceForm input{
+        border: 2px solid #d4e5eb;
+        width: 100%;
+        padding: 7px 40px 5px 10px;
+      }
+
+      #serviceForm svg{
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        fill: #D5D5D5;
+      }
+
+      #serviceForm input:-webkit-autofill, #serviceForm textarea:-webkit-autofill{
+        box-shadow: none;
+      }
+
+      #cont-form .button-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: calc(var(--gap) * 2);
+      }
+
+      #cont-form button{
+        height: 50px;
+        min-width: 240px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #552600;
+        cursor: pointer;
+        padding: 13px 0 8px;
+        font-weight: bold;
+        background-color: #ffd262;
+        border: 2px solid #e4b34f;
+      }
+
+      #formSubmited{
+        margin-top: var(--gap);
+        text-align: center;
+        font-weight: bold;
+        color: black;
+      }
+
+      @media only screen and (min-width: 1200px) {
+
+        .min-height-100{
+          background: url(/assets/images/blueEllipse.png), #E2F3F3;
+          background-repeat: no-repeat;
+          background-position: right center;
+        }
+      }
+
+      @media only screen and (min-width: 900px){
+        .post-entry{
+          margin-bottom: calc(var(--gap) / 2);
+        }
+
+      }
+
+      @media only screen and (max-width: 991px){
+        .title-intro {
+          font-size: 30px;
+          margin-bottom: 20px;
+          line-height: 1.8;
+        }
+        .padding-0{
+          padding: 0;
+        }
+        .web-btns{
+          margin-top: 40px;
+        }
+        .web-btn a {
+          margin-bottom: 20px;
+        }
+        .span-why-uns{
+          font-size: 26px;
+        }
+
+      }
+
+      @media only screen and (max-width: 900px){
+        .top-link {
+          bottom: -35px;
+        }
+      }
+
+      @media only screen and (max-width: 530px) {
+        #serviceForm{
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .arrow {
+        border: solid #044154;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+      }
+
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    </style>
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <main class="my-page-main">
+        <article>
+
+          {{- partial "seo-content.html" . }}
+          
+          <div class="seo-blog">
+            {{- if .Content }}
+            <div class="post-content">
+              {{- if not (.Param "disableAnchoredHeadings") }}
+              {{- partial "anchored_headings.html" .Content -}}
+              {{- else }}{{ .Content }}{{ end }}
+            </div>
+            {{- end }}
+          </div>
+          
+          <div class="seo-posts"> 
+            {{- $pages := union .RegularPages .Sections }}
+            
+            {{- if .IsHome }}
+            {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+            {{- end }}
+            
+            {{- $paginator := .Paginate $pages }}
+            
+            {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+            {{- partial "home_info.html" . }}
+            {{- end }}
+            
+            {{- $term := .Data.Term }}
+            {{- range $index, $page := $paginator.Pages }}
+            
+            {{- $class := "post-entry" }}
+            
+            {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+            {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+            {{- $class = "first-entry" }}
+            {{- else if $term }}
+            {{- $class = "post-entry tag-entry" }}
+            {{- end }}
+            
+            <article class="{{ $class }}">
+              <header class="entry-header">
+                <h2>
+                  {{- .Title }}
+                  {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+                </h2>
+              </header>
+              {{- if (ne (.Param "hideSummary") true) }}
+              <div class="entry-content">
+                <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+              </div>
+              {{- end }}
+              {{- if not (.Param "hideMeta") }}
+              <footer class="entry-footer">
+                {{- partial "post_meta.html" . -}}
+              </footer>
+              {{- end }}
+              <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+            </article>
+            {{- end }}
+          </div>  
+          
+          <div class="seo-posts-nav">
+            {{- if gt $paginator.TotalPages 1 }}
+            <div>
+              <nav class="pagination">
+                {{- if $paginator.HasPrev }}
+                <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+                  «&nbsp;{{ i18n "prev_page" }}&nbsp;
+                  {{- if (.Param "ShowPageNums") }}
+                  {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+                  {{- end }}
+                </a>
+                {{- end }}
+                {{- if $paginator.HasNext }}
+                <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+                  {{- i18n "next_page" }}&nbsp;
+                  {{- if (.Param "ShowPageNums") }}
+                  {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+                  {{- end }}&nbsp;»
+                </a>
+                {{- end }}
+              </nav>
+            </div>
+            {{- end }}
+          </div>
+
+
+            
+          
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+
+</html>

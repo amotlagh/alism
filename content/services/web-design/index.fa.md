@@ -1,7 +1,10 @@
 ---
-title: خدمات
 
-#description: 
+layout: web-design
+pagetitle: طراحی سایت  حرفه ای و فروشگاه اینترنتی 
+title: طراحی سایت
+
+description:  طراحی سایت  حرفه ای و فروشگاه اینترنتی 
 
 #cover:
 #    image: "cannibalization.jpg" 
