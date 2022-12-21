@@ -24,6 +24,7 @@ languages:
   fa:
     languagedirection: rtl
     languageAltTitle: "فارسی"
+    languageName: فارسی
     title: علی مطلق
     weight: 2
     copyright: "اینجا کپی رایت معنی نداره؛ لطفا اگه کپی می کنید، حداقل یه لینک بدید."
@@ -105,6 +106,7 @@ languages:
 
   en:
     languageAltTitle: "English"
+    languageName: English
     title: Ali Motlagh
     weight: 1
     #copyright: " "
@@ -189,7 +191,7 @@ params:
   cover:
     linkFullImages: false
     relative: true
-    hiddenInList: false
+    hiddenInList: true
     responsiveImages: true
 
 outputs:
