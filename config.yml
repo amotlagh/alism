@@ -35,7 +35,7 @@ languages:
           weight: 10
         - identifier: web-design
           name: طراحی سایت
-          url: /services/web-design/
+          url: /web-design/
           weight: 20
         - identifier: seo
           name: سئو و بهینه‌سازی

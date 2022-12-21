@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="/assets/styles/bootstrap-grid.min.css">
 
     <style>
+      
 
       .list {
         background: #ffffff;
+        --gold: #9c8321;
+        --fgold: #ffffff;
+        --bc2a: #011b39;
+        --fbc2: #02254b;
+        --fco: #000c32;
+        --bcbg: #f4f4f3;
+        --bcr: 4px;
+        --bg: #f4f4f3;
+        --bgprice: #ffffff;
       }
 
       .dark {
@@ -16,7 +26,12 @@
         --white: rgb(255 255 255);
         --black: #000000;
         --header-gray: #2b2e36;
-        --header-section-fluid-img: url(/assets/images/header.svg);
+        --header-section-fluid-img: url(/assets/images/wed-design.svg);
+        --fbc2: #ffffff;
+        --gold: #c5aa75;
+        --fgold: #000000;
+        --bg: #000000;
+        --bgprice: #f4f4f3;
       }
 
       @font-face {
@@ -35,21 +50,37 @@
         font-display: swap;
       }
 
-
-      body .my-page-main{
+      body {
         font-size: 16px;
         font-family: 'Yekan', 'Rubik', sans-serif !important;
-        text-align: justify;
-        font-feature-settings: "kern", "calt", "rvrn", "ss03";
+      }
+
+      body .my-page-main{
         box-shadow: 0px 4px 20px -5px var(--black);
         border-top: 1px solid var(--header-gray);
         letter-spacing: -0.5px;
       }
       
+      button#theme-toggle {
+        margin: 0px auto -5px;
+      }
+
+      //.first-section{
+      //  background-image: var(--header-section-fluid-img);
+      //  background-repeat: no-repeat;
+      //  background-position: right top;
+      //  background-size: contain;
+      //  background-color: var(--theme);
+      //}
 
       .min-height-100-first-section {
-        min-height: 600px;
+        min-height: 700px;
         margin: auto;
+      }
+
+      .first-row-div{
+        text-align: right;
+        max-width: 400px;
       }
 
       .my-page-content {
@@ -68,60 +99,37 @@
           margin-top: 56px;
       } 
 
-    
-      .header-section{
-        background-image: var(--header-section-fluid-img) ;
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-      }
-
-
       .title-intro{
         font-weight: 900;
-        font-size: 43px;
+        font-size: 60px;
         line-height: 1.3;
-        margin-bottom: 30px;
-        color: var(--white);
+        margin-bottom: 10px;
+        color: var(--fbc2);
       }
 
       .tile-pragraph{
-        color: var(--white);
         font-weight: 400;
-      }
-
-      .web-btns{
-        margin-top: 50px;
+        font-size: 18px;
       }
       
       .web-btn a {
-        background-image: linear-gradient(109deg, #2661a7, #3d9cdb 100%);
-        height: 45px;
-        min-width: 200px;
+        height: 48px;
+        width: 100%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: var(--fgold);
         cursor: pointer;
-        border-radius: var(--radius);
         padding: 13px 0 8px;
-        font-weight: bold;
-      }
-
-      .tarrife-btn a{
-        display: -webkit-inline-box;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 17px;
-        border: none;
-        height: 45px;
-        cursor: pointer;
-        border-bottom: 2px solid;
-        color: var(--white);
+        background-color: var(--gold);
+        font-size: 18px;
+        border-radius: var(--bcr);
+        max-width: 232px;
+        margin-top: 35px;
       }
 
       .container-why-us{
+        padding-bottom: calc(4 * var(--gap));
         margin-top: calc(0 * var(--gap));
       }
 
@@ -130,7 +138,6 @@
         text-align: center;
         font-weight: 900;
         font-size: 30px;
-        margin-bottom: 7.5rem;
         color: var(--white);
       }
 
@@ -142,33 +149,34 @@
 
       .h3-why-us{
         margin-bottom: 15px;
-        color: var(--white);
+        color: var(--fbc2);
         font-size: 26px;
       }
 
       .h3-why-us::after{
         content: ".";
-        color: #ec4067;
+        color: var(--gold);
         font-weight: 900;
-        font-size: 24px;
+        font-size: 35px;
       }
 
       .min-height-100{
-        min-height: 100vh;
         margin: auto;
+        max-width: 1300px;
       }
 
       .price-table{
-        margin-top: calc(var(--gap) * 4);
+        padding-top: calc(var(--gap) * 4);
         padding-bottom: calc(var(--gap) * 4);
+        background-color: var(--bg);
       }
 
       .price-table > h2{
         text-align: center;
         font-weight: 900;
         margin: 0 auto 20px;
-        color: var(--white);
-        font-size: 42px;
+        color: var(--fbc2);
+        font-size: 64px;
       }
 
       .price-table > p{
@@ -182,24 +190,49 @@
       }
 
       .div-price-table{
-        border: 2px solid;
-        box-shadow: 6px 7px 0 0 rgb(55 101 153 / 20%);
-        border-radius: var(--radius);
+        border: 2px solid var(--gold);
+        box-shadow: 6px 6px 0 0 #19875421;
+        background: var(--bgprice);
+        transform: translateY(0);
+        transition: transform 0.4s;
+        border-radius: var(--bcr);
       }
+
+      .div-price-table:hover{
+        transform: translateY(-10px);
+      }
+
 
       .h-price-table{
         text-align: center;
-        margin: calc(4 * var(--gap)) 0 calc(1 * var(--gap));
-        font-weight: 900;
+        padding: 36px 0 30px;
         font-size: 30px;
-        color: var(--white);
+        color: #fff;
+        background-color: var(--bc2a) ;
+        border-top-left-radius: var(--bcr);
+        border-top-right-radius: var(--bcr);
+      }
+
+      .h-price-table h2{
+        font-size: 38px;
+        color: #fff;
+      }
+
+      .h-price-table .offer{
+        font-size: 17px;
+        color: #fff;
+        font-weight: 400;
+
       }
 
       .b-price-table{
         text-align: center;
         font-size: 18px;
         font-weight: 400;
-        margin-bottom: calc(var(--gap) * 2);
+        margin-bottom: calc(var(--gap) * 1.5);
+        background-color: rgb(2, 39, 65);
+        border-bottom: 2px dashed var(--gold);
+        color: #97adc5;
       }
 
       .start-price-table{
@@ -209,7 +242,6 @@
       .price-price-table{
         font-size: 52px;
         font-weight: 900;
-        color: #0dcaf0;
       }
 
       .irt-price-table{
@@ -220,56 +252,192 @@
       .ul-price-table{
         margin-right: 30px;
         list-style: square;
+        color: var(--bc2a);
+      }
+
+      .ul-price-table li::marker{
+        color: var(--gold);
       }
 
       .btn-price-table{
-        margin: 60px 40px 40px;
+        margin: 35px 40px 30px;
       }
 
       .order-btn-price-table{
         display: block;
         text-align: center;
-        padding: 10px 0 6px;
+        padding: 13px 0 8px;
         margin-bottom: 30px;
-        background-image: linear-gradient(109deg, #2661a7, #3d9cdb 100%);
-        color: white;
-        border-radius: var(--radius);
         font-weight: bold;
+        color: var(--fgold) ;
+        background-color: var(--gold) ;
+        height: 48px;
+        border-radius: var(--bcr);
       }
 
       .more-btn-price-table{
-        display: block;
-        text-align: center;
-        text-decoration: underline;
-        display: none;
+        text-align: right;
+        padding-right: 5px;
+        margin-left: 5px;
+        color: #044154;
       }
 
-      .seo-blog, .seo-posts, .seo-posts-nav{
+      .web-blog, .web-posts, .web-posts-nav{
         max-width: 720px;
         margin: auto ;
         padding: 0 var(--gap);
       }
 
-      .seo-posts{
+      .web-posts{
         text-align: right;
       }
 
-      .seo-posts .post-entry{
-        padding: calc(var(--gap) / 2);
+      .web-posts .post-entry{
         box-shadow: 0 0 6px 2px rgb(0 0 0 / 7%);
       }
 
-      .seo-posts-nav{
+      .web-posts-nav{
         padding-bottom: 50px;
       }
 
+      ul {
+        list-style-type: square;
+      }
+
+      .cont-f-form{
+        padding: calc(var(--gap) * 5) var(--gap);
+        margin-bottom: calc(var(--gap) * 5);
+        box-shadow: 0 10px 10px 0px #0000003d;
+      }
+
+      .cont-f-form span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cont-f-form span h3{
+        color: #ffffff;
+        display: inline;
+        background-color: #002f50;
+        padding: 12px 25px;
+        position: relative;
+        top: 22px;
+        border-radius: var(--bcr);
+        z-index: 99;
+      }
+
+      #cont-form{
+        max-width: 672px;
+        margin: auto;
+        padding: var(--gap) var(--gap) calc(var(--gap) * 2) ;
+        box-shadow: 6px 6px 0 0 rgb(28 29 33 / 9%);
+        position: relative;
+        background-color: #ffffff;
+        border: 2px dashed var(--gold);
+        border-radius: var(--bcr);
+        color: var(--bc2a);
+      }
+      
+
+      #cont-form .cont-form-p{
+        padding: var(--gap);
+        background: #f4f4f3;
+        margin-bottom: var(--gap);
+        margin-top: 20px;
+        border-radius: var(--bcr);
+      }
+
+      #serviceForm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: calc(var(--gap) * 1.5);
+      }
+
+      #serviceForm .form-group{
+        position: relative;
+      }
+
+      #serviceForm input{
+        border: 2px solid #d4e5eb;
+        width: 100%;
+        padding: 7px 40px 5px 10px;
+        border-radius: var(--bcr);
+      }
+
+      #serviceForm svg{
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        fill: #D5D5D5;
+      }
+
+      .message-form{
+        margin-top: calc(var(--gap) * 1.5);
+      }
+
+      #messafeForm{
+        border: 2px solid #d4e5eb;
+        width: 100%;
+        padding: 7px 10px 5px 10px;
+        border-radius: var(--bcr);
+        max-width: 620px;
+      }
+
+      #serviceForm input:-webkit-autofill, #serviceForm textarea:-webkit-autofill{
+        box-shadow: none;
+      }
+
+      #cont-form .button-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: calc(var(--gap) * 2);
+      }
+
+      #cont-form button{
+        min-width: 240px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 13px 0 8px;
+        border-radius: var(--bcr);
+        color: var(--fgold);
+        background-color: var(--gold);
+        height: 48px;
+        transition: ease .3s;
+      }
+
+
+      #cont-form button:hover{
+        background-color: #8b7317;
+      }
+
+      #formSubmited{
+        margin-top: var(--gap);
+        text-align: center;
+        font-weight: bold;
+        color: black;
+      }
+
+      @media only screen and (min-width: 1200px) {
+
+        //.min-height-100{
+        //  background: url(/assets/images/blueEllipse.png);
+        //  background-repeat: no-repeat;
+        //  background-position: right center;
+        //}
+      }
+
+      @media only screen and (min-width: 900px){
+        .post-entry{
+          margin-bottom: calc(var(--gap) / 2);
+        }
+
+      }
 
       @media only screen and (max-width: 991px){
-        .title-intro {
-          font-size: 26px;
-          margin-bottom: 20px;
-          line-height: 1.8;
-        }
         .padding-0{
           padding: 0;
         }
@@ -291,19 +459,38 @@
         }
       }
 
-      @media only screen and (min-width: 900px){
-        .seo-posts{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: auto;
-          grid-column-gap: calc(var(--gap) / 2);
+      @media only screen and (max-width: 530px) {
+        #serviceForm{
+          grid-template-columns: 1fr;
         }
-        .post-entry{
-          margin-bottom: calc(var(--gap) / 2);
-        }
-
       }
 
+      .arrow {
+        border: solid #044154;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+      }
+
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
     </style>
 </head>
 
@@ -321,20 +508,92 @@
 
           {{- partial "web-design-content.html" . }}
           
+          <div class="web-blog">
             {{- if .Content }}
-            <div class="post-content my-page-content">
+            <div class="post-content">
               {{- if not (.Param "disableAnchoredHeadings") }}
               {{- partial "anchored_headings.html" .Content -}}
               {{- else }}{{ .Content }}{{ end }}
             </div>
             {{- end }}
-        
-
-            {{- if (.Param "comments") }}
-            {{- partial "comments.html" . }}
+          </div>
+          
+          <div class="web-posts"> 
+            {{- $pages := union .RegularPages .Sections }}
+            
+            {{- if .IsHome }}
+            {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
             {{- end }}
             
-          </article>
+            {{- $paginator := .Paginate $pages }}
+            
+            {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+            {{- partial "home_info.html" . }}
+            {{- end }}
+            
+            {{- $term := .Data.Term }}
+            {{- range $index, $page := $paginator.Pages }}
+            
+            {{- $class := "post-entry" }}
+            
+            {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+            {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+            {{- $class = "first-entry" }}
+            {{- else if $term }}
+            {{- $class = "post-entry tag-entry" }}
+            {{- end }}
+            
+            <article class="{{ $class }}">
+              <header class="entry-header">
+                <h2>
+                  {{- .Title }}
+                  {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+                </h2>
+              </header>
+              {{- if (ne (.Param "hideSummary") true) }}
+              <div class="entry-content">
+                <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+              </div>
+              {{- end }}
+              {{- if not (.Param "hideMeta") }}
+              <footer class="entry-footer">
+                {{- partial "post_meta.html" . -}}
+              </footer>
+              {{- end }}
+              <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+            </article>
+            {{- end }}
+          </div>  
+          
+          <div class="web-posts-nav">
+            {{- if gt $paginator.TotalPages 1 }}
+            <div>
+              <nav class="pagination">
+                {{- if $paginator.HasPrev }}
+                <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+                  «&nbsp;{{ i18n "prev_page" }}&nbsp;
+                  {{- if (.Param "ShowPageNums") }}
+                  {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+                  {{- end }}
+                </a>
+                {{- end }}
+                {{- if $paginator.HasNext }}
+                <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+                  {{- i18n "next_page" }}&nbsp;
+                  {{- if (.Param "ShowPageNums") }}
+                  {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+                  {{- end }}&nbsp;»
+                </a>
+                {{- end }}
+              </nav>
+            </div>
+            {{- end }}
+          </div>
+
+
+            
+          
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>
