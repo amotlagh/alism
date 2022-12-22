@@ -25,6 +25,12 @@ cover:
 tags:
     - راه اندازی کسب و کار
 
+keywords:
+    - درگاه پرداخت
+    - زرین پال
+    - آیدی پی
+    - شاپرک    
+
 #url: /cannibalization
 TocOpen: true
 #showToc: true

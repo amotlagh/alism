@@ -17,7 +17,7 @@ description:  طراحی سایت  حرفه ای و فروشگاه اینترن�
 showToc: false
 #canonicalURL: "https://canonical.url/to/page"
 #weight: 1
-robotsNoIndex: true
+robotsNoIndex: false
 searchHidden: true
 #draft: false
 ShowBreadCrumbs: false
