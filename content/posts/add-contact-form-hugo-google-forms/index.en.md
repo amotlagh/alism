@@ -62,8 +62,12 @@ Add *rawhtml* tag in `contact.md`
 Now add following to your contact.md file and replace the form ID and field IDs from previous.
 
 ```
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+onload="if(submitted) {document.getElementById('formSubmited').innerHTML = 'Thanks for filling out our form!' }"></iframe>
 
-<form action="https://docs.google.com/forms/d/e/<formID/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
+<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/<formID>/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
+
   <label>Name*</label>
         <input type="text" placeholder="Name*" class="form-input" name="entry.719211028" required>
 
@@ -131,6 +135,12 @@ margin-top:-4px;
 font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+#formSubmited{
+    margin-top: 30px;
+    text-align: center;
+}
+
 ```
 
 Now add following line to link the CSS to the form.
@@ -148,13 +158,7 @@ hugo new thankyou.md
 Add following to contact page html just before `form` tag.
 
 ```
-<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {document.getElementById('formSubmited').innerHTML = 'Thanks for filling out our form!' }"></iframe>
-
-<form action="https://docs.google.com/forms/d/e/<formID>/formResponse" 
-method="post" target="hidden_iframe" onsubmit="submitted=true;">
-</form>
+<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/<formID>/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
 ```
 
 *Replace FormID with actual ID from Google form.*

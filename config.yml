@@ -45,11 +45,15 @@ languages:
         - identifier: tags
           name:  تگ‌ها 
           url: /tags/
-          weight: 50
+          weight: 60
         - identifier: posts
           name: بلاگ
           url: /posts/
-          weight: 60
+          weight: 50
+        - identifier: about
+          name: دربارهٔ من
+          url: /about/
+          weight: 70
 
 
     params:

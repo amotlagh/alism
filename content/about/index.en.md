@@ -49,3 +49,87 @@ kramdown
 
 dsdfdsf
 : A Markdown-superset converter
+
+
+
+
+
+{{< rawhtml >}}
+
+<style>
+
+form { max-width:420px; margin:50px auto; }
+
+.form-input {
+color: var(--primary);
+font-weight:500;
+font-size: 18px;
+border-radius: 5px;
+line-height: 22px;
+background-color: transparent;
+border:2px solid #CC6666;
+transition: all 0.3s;
+padding: 13px;
+margin-bottom: 15px;
+width:100%;
+box-sizing: border-box;
+outline:0;
+}
+
+.form-input:focus { border:2px solid #CC4949; }
+
+textarea {
+height: 150px;
+line-height: 150%;
+resize:vertical;
+}
+
+[type="submit"] {
+width: 100%;
+background:#CC6666;
+border-radius:5px;
+border:0;
+cursor:pointer;
+color:white;
+font-size:24px;
+padding-top:10px;
+padding-bottom:10px;
+transition: all 0.3s;
+margin-top:-4px;
+font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+#formSubmited{
+    margin-top: 30px;
+    text-align: center;
+}
+
+</style>
+
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+onload="if(submitted) {document.getElementById('formSubmited').innerHTML = 'Thanks for filling out our form!' }"></iframe>
+
+<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKGUQy7gdTamYUk0AJ1rr-iyh--5N_gSz8NoS8bhIWMl3Ivg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
+
+  <label>Name*</label>
+        <input type="text" placeholder="Name*" class="form-input" name="entry.1362533102" required>
+
+  <label>Email*</label>
+        <input type="email" placeholder="Email address*" class="form-input" name="entry.1949881426" required>
+
+   <label>Subject*</label>
+        <input type="text" placeholder="Subject*" class="form-input" name="entry.1044082190" required>
+
+   <label>Message</label>
+        <textarea rows="5" placeholder="Message" class="form-input" name="entry.1437178124" ></textarea>
+
+   <button type="submit">Send</button>
+
+   <p id="formSubmited"></p>
+</form>
+
+
+{{< /rawhtml >}}
