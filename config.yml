@@ -180,7 +180,7 @@ params:
   navigation:
     help: Help
   assets:
-    disableFingerprinting: false
+    disableFingerprinting: true
     favicon: "/assets/images/favicon.ico"
     favicon16x16:  "/assets/images/favicon-16x16.png"
     favicon32x32:  "/assets/images/favicon-32x32.png"
