@@ -5,10 +5,10 @@ description: Hugo is great for a static site. No need for complicated setups, no
 summary: Static sites have ton of advantages but when it comes to dynamic content like contact form it is little bit complicated to setup. I’m gonna use Google Forms to setup Contact form on Hugo Static site with custom thank you page on submit.
 
 
-date: "2022-12-21"
+date: "2022-12-22"
 
 PublishDate: "2022-12-21"
-Lastmod: "2022-11-21"
+Lastmod: "2022-11-22"
 
 cover:
     image: google-forms.webp
