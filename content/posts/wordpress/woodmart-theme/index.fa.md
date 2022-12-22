@@ -25,7 +25,7 @@ keywords:
     - قالب وودمارت
     - Woodmart theme
 
-#url: /cannibalization
+TocOpen: false
 showToc: true
 #canonicalURL: "https://canonical.url/to/page"
 #weight: 1
