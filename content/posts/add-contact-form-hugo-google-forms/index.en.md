@@ -59,7 +59,7 @@ Add *rawhtml* tag in `contact.md`
 
 ![raw html](rawhtml.webp)
 
-Now add following to your contact.md file and replace the form ID and field IDs from previous.
+Now add following to your contact.md file and replace the *form ID* and *field IDs* from previous.
 
 ```
 <script type="text/javascript">var submitted=false;</script>
@@ -148,20 +148,6 @@ Now add following line to link the CSS to the form.
 ```
 <link rel="stylesheet" href="/css/form.css">
 ```
-
-Now try filling and submitting the form. You may’ve observed that after submission, page is redirecting to default Google form response page. To fix it first create a new page with following
-
-```
-hugo new thankyou.md
-```
-
-Add following to contact page html just before `form` tag.
-
-```
-<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/<formID>/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
-```
-
-*Replace FormID with actual ID from Google form.*
 
 > Now it should looks something like this bellow
 
