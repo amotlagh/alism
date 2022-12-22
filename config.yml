@@ -61,7 +61,7 @@ languages:
         #iconHeight: 32
       # profile-mode
       ProfileMode:
-        enabled: true
+        enabled: false
         title: Ali Motlagh  # optional default will be site title
         subtitle: Front-End and WordPress Developer
         imageUrl: "/assets/images/alish.jpg" # optional
@@ -76,8 +76,12 @@ languages:
 
       # home-info mode
       #homeInfoParams:
-      #  Title: "علی هستم"
-      #  Content: " به زودی اینجا یه چیزی در مورد خودم مینویسم
+      #  Title: ""
+      #  Content: ""
+
+      mainSections:
+        - posts
+        - seo
 
 
       
@@ -176,7 +180,7 @@ params:
   navigation:
     help: Help
   assets:
-    disableFingerprinting: true
+    disableFingerprinting: false
     favicon: "/assets/images/favicon.ico"
     favicon16x16:  "/assets/images/favicon-16x16.png"
     favicon32x32:  "/assets/images/favicon-32x32.png"
@@ -191,7 +195,7 @@ params:
   cover:
     linkFullImages: false
     relative: true
-    hiddenInList: true
+    hiddenInList: false
     responsiveImages: true
 
 outputs:
