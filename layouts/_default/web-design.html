@@ -30,7 +30,7 @@
         --fbc2: #ffffff;
         --gold: #c5aa75;
         --fgold: #000000;
-        --bg: #000000;
+        --bg: #f4f4f3;
         --bgprice: #f4f4f3;
       }
 
@@ -65,8 +65,10 @@
         margin: 0px auto -5px;
       }
 
+
+
       .min-height-100-first-section {
-        min-height: 700px;
+        min-height: 530px;
         margin: auto;
       }
 
@@ -167,7 +169,7 @@
         text-align: center;
         font-weight: 900;
         margin: 0 auto 20px;
-        color: var(--fbc2);
+        color: #02254b;
         font-size: 64px;
       }
 
@@ -175,6 +177,7 @@
         text-align: center;
         max-width: 600px;
         margin: 0 auto 40px;
+        color: #02254b;
       }
 
       .col-price-table{
@@ -184,7 +187,7 @@
       .div-price-table{
         border: 2px solid var(--gold);
         box-shadow: 6px 6px 0 0 #19875421;
-        background: var(--bgprice);
+        background: white;
         transform: translateY(0);
         transition: transform 0.4s;
         border-radius: var(--bcr);
@@ -222,7 +225,7 @@
         font-size: 18px;
         font-weight: 400;
         margin-bottom: calc(var(--gap) * 1.5);
-        background-color: rgb(2, 39, 65);
+        background-color: black;
         border-bottom: 2px dashed var(--gold);
         color: #97adc5;
       }
@@ -298,8 +301,8 @@
 
       .cont-f-form{
         padding: calc(var(--gap) * 5) var(--gap);
-        margin-bottom: calc(var(--gap) * 5);
-        box-shadow: 0 10px 10px 0px #0000003d;
+        margin-bottom: calc(var(--gap) * 4);
+        background-color: #1D2127;
       }
 
       .cont-f-form span{
@@ -309,7 +312,7 @@
       }
 
       .cont-f-form span h3{
-        color: #ffffff;
+        color: var(--gold);
         display: inline;
         background-color: #002f50;
         padding: 12px 25px;
@@ -317,6 +320,7 @@
         top: 22px;
         border-radius: var(--bcr);
         z-index: 99;
+        border: 2px solid;
       }
 
       #cont-form{
@@ -404,6 +408,7 @@
 
       #cont-form button:hover{
         background-color: #8b7317;
+        color: white;
       }
 
       #formSubmited{
@@ -413,6 +418,14 @@
         color: black;
       }
 
+      @media only screen and (min-width: 991px){
+        .first-section{
+        background-image: url(/assets/images/onboarding.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 400px;
+        }
+      }
 
       @media only screen and (min-width: 900px){
         .post-entry{
@@ -422,15 +435,24 @@
       }
 
       @media only screen and (max-width: 991px){
+        .first-section{
+          background-image: url(/assets/images/gold-line.svg);
+          background-repeat: no-repeat;
+          background-position: right ;
+        }
+        
         .padding-0{
           padding: 0;
         }
+
         .web-btns{
           margin-top: 40px;
         }
+
         .web-btn a {
           margin-bottom: 20px;
         }
+
         .span-why-uns{
           font-size: 26px;
         }
