@@ -39,13 +39,9 @@ languages:
           url: /web-design/
           weight: 20
         - identifier: seo
-          name: سئو و بهینه‌سازی
+          name: خدمات سئو
           url: /seo/
           weight: 30
-        - identifier: tags
-          name:  تگ‌ها 
-          url: /tags/
-          weight: 60
         - identifier: posts
           name: بلاگ
           url: /posts/
@@ -120,10 +116,6 @@ languages:
     #copyright: " "
     menu:
       main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: 1
         - identifier: about
           name: About
           url: /about/
@@ -223,10 +215,5 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-  highlight:
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: true
-    # noClasses: false
-    style: monokai
+    
+
