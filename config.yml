@@ -68,11 +68,11 @@ languages:
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        buttons:
-          - name: طراحی سایت
-            url: "https://webshark.ir/web-design/"
-          - name: سئو و بهینه‌سازی
-            url: "https://webshark.ir/seo-service/"
+        #buttons:
+        #  - name: طراحی سایت
+        #    url: "/fa/web-design/"
+        #  - name: سئو و بهینه‌سازی
+        #    url: "/fa/seo/"
 
       # home-info mode
       #homeInfoParams:

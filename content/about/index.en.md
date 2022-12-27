@@ -64,10 +64,10 @@ form { max-width:420px; margin:50px auto; }
 color: var(--primary);
 font-weight:500;
 font-size: 18px;
-border-radius: 5px;
+border-radius: 0;
 line-height: 22px;
 background-color: transparent;
-border:2px solid #CC6666;
+border:2px solid var(--primary);
 transition: all 0.3s;
 padding: 13px;
 margin-bottom: 15px;
@@ -86,8 +86,8 @@ resize:vertical;
 
 [type="submit"] {
 width: 100%;
-background:#CC6666;
-border-radius:5px;
+background:var(--primary);
+border-radius:0;
 border:0;
 cursor:pointer;
 color:white;
@@ -97,6 +97,7 @@ padding-bottom:10px;
 transition: all 0.3s;
 margin-top:-4px;
 font-weight:700;
+color: var(--theme);
 }
 [type="submit"]:hover { background:#CC4949; }
 
@@ -112,19 +113,19 @@ font-weight:700;
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
 onload="if(submitted) {document.getElementById('formSubmited').innerHTML = 'Thanks for filling out our form!' }"></iframe>
 
-<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKGUQy7gdTamYUk0AJ1rr-iyh--5N_gSz8NoS8bhIWMl3Ivg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
+<form accept-charset="UTF-8" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdm-RIJqIokYBZpNDY9JHa6yS6jLC5y5xipSePbmD14KLss4g/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true">
 
   <label>Name*</label>
-        <input type="text" placeholder="Name*" class="form-input" name="entry.1362533102" required>
+        <input type="text" placeholder="Name*" class="form-input" name="entry.837234009" required>
 
   <label>Email*</label>
-        <input type="email" placeholder="Email address*" class="form-input" name="entry.1949881426" required>
+        <input type="email" placeholder="Email address*" class="form-input" name="entry.1633844991" required>
 
    <label>Subject*</label>
-        <input type="text" placeholder="Subject*" class="form-input" name="entry.1044082190" required>
+        <input type="text" placeholder="Subject*" class="form-input" name="entry.682172945" required>
 
    <label>Message</label>
-        <textarea rows="5" placeholder="Message" class="form-input" name="entry.1437178124" ></textarea>
+        <textarea rows="5" placeholder="Message" class="form-input" name="entry.2028215254" ></textarea>
 
    <button type="submit">Send</button>
 
