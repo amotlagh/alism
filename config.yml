@@ -75,9 +75,9 @@ languages:
         #    url: "/fa/seo/"
 
       # home-info mode
-      #homeInfoParams:
-      #  Title: ""
-      #  Content: ""
+      homeInfoParams:
+        Title: "علی مطلق"
+        Content: "پر شور و شوق در مورد مهندسی نرم‌افزار، استارتاپ‌ها و راهبری."
 
       mainSections:
         - posts
