@@ -116,18 +116,18 @@ languages:
     #copyright: " "
     menu:
       main:
+        - identifier: services
+          name: Services
+          url: /services/
+          weight: 5
         - identifier: about
           name: About
           url: /about/
           weight: 20
         - identifier: work
-          name: Work
-          url: /work/
+          name: Works
+          url: /works/
           weight: 10
-        - identifier: posts
-          name: Blog
-          url: /posts/
-          weight: 50
     params:
       comments: false
       author: Ali Motlagh
@@ -137,7 +137,7 @@ languages:
         #icon: "/assets/images/favicon.ico"
         #iconHeight: 35
       profileMode:
-        enabled: true
+        enabled: false
         title: "Hi, I'm Ali." # optional default will be site title
         subtitle: "Freelance Web Designer & Developer based in Shiraz, Iran.
 Highly experienced in designing & developing custom Wordpress websites."
@@ -145,6 +145,11 @@ Highly experienced in designing & developing custom Wordpress websites."
         imageTitle: "Ali Shahcheraghi" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
+
+      # home-info mode
+      homeInfoParams:
+        Title: "Hi, I'm Ali."
+        Content: "Freelance Web Designer & Developer based in Shiraz, Iran. Highly experienced in designing & developing custom Wordpress websites."
 
 
       socialIcons: # optional
