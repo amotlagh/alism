@@ -30,7 +30,10 @@ keywords:
     - زرین پال
     - آیدی پی
     - شاپرک    
-
+aliases:
+    - /blog/best-online-payment-gateway.html
+    
+    
 #url: /cannibalization
 TocOpen: true
 #showToc: true

@@ -1,7 +1,7 @@
 ---
 layout: seo-landing
 pagetitle: سئو سایت
-title: سئو
+title: سئو سایت
 description: سئو یا SEO مخفف Search Engine optimization یا همان بهینه سازی سایت برای موتورهای جستجو است که هدف اصلی آن کسب جایگاه بهتر در نتایج گوگل است. هر چقدر جایگاه شما در لیست نتایج بالاتر باشد شانس بیشتری برای جذب کاربر خواهید داشت.
 
 disableHLJS: true

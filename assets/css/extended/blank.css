@@ -51,8 +51,8 @@
       font-family: 'Vazir',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
   }
 
-  html[dir="rtl"] .post-single,.post-content table th{
-      font-size: 18px;
+  html[dir="rtl"] .post-single,html[dir="rtl"] .post-content table th, html[dir="rtl"] main{
+      font-size: 17.6px;
       line-height: 1.9;
   }
 
@@ -85,9 +85,21 @@
       padding: 11px;
   }
 
+  .breadcrumbs {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
+    color: var(--secondary);
+    line-height: 34px;
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    }
+
+
   @media only screen and (max-width: 600px){
-      html[dir="rtl"] .post-single,.post-content table th{
-          font-size: 17px;
-          line-height: 1.9;
-      }
+    html[dir="rtl"] .post-single,html[dir="rtl"] .post-content table th, html[dir="rtl"] main{
+        font-size: 16.5px;
+        line-height: 1.9;
+    }
   }

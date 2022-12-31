@@ -30,7 +30,10 @@ tags:
 keywords:
     - ارور cURL Error 28
 
-
+aliases:
+    - /fa/posts/wordpress/curl-error-28-connection-timed-out/
+    
+    
 hideMeta: true
 #url: /cannibalization
 TocOpen: true
