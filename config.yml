@@ -186,6 +186,7 @@ params:
   navigation:
     help: Help
   assets:
+    disableHLJS: true
     disableFingerprinting: true
     favicon: "/assets/images/favicon.ico"
     favicon16x16:  "/assets/images/favicon-16x16.png"
