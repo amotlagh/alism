@@ -1,15 +1,8 @@
-  @font-face {
-    font-family: Rubik;
-    src: url('/assets/fonts/Rubik-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
 
   @font-face {
     font-family: Rubik;
-    src: url('/assets/fonts/Rubik-Bold.woff2') format('woff2');
-    font-weight: bold;
+    src: url('/assets/fonts/rubik.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
@@ -49,7 +42,7 @@
   }
 
   html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
-      font-family: 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-family: 'Rubik', 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
       font-size: 16px;
     }
 
@@ -57,7 +50,7 @@
     text-align: justify;
   }
 
-  html[dir="rtl"] .post-single, html[dir="rtl"] .list-page{
+  .post-single, .list-page{
       line-height: 2;
   }
 
@@ -65,8 +58,9 @@
     letter-spacing: -0.75px;
   }
 
-  html[dir="rtl"] #menu a {
+  html[dir="rtl"] #menu a span {
     letter-spacing: -1px;
+    padding-bottom: 4px;
   }
 
   .paginav .prev, .paginav .next {
@@ -77,7 +71,7 @@
       font-size: 18px;
   }
 
-  .paginav .title {
+  html[dir="rtl"] .paginav .title {
       letter-spacing: 0px;
   }
 
