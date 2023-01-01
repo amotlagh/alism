@@ -186,6 +186,8 @@ params:
   navigation:
     help: Help
   assets:
+    theme_color: '#121417'
+    msapplication_TileColor: '#121417'
     disableHLJS: true
     disableFingerprinting: true
     favicon: "/assets/images/favicon.ico"
