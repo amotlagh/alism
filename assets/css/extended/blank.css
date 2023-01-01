@@ -51,8 +51,7 @@
   html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
       font-family: 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
       font-size: 16px;
-      letter-spacing: -0.75px;
-  }
+    }
 
   html[dir="rtl"] .post-single .post-content p, html[dir="rtl"] .post-single .post-description, html[dir="rtl"] .list-page .post-content p, html[dir="rtl"] .list-page .post-description{
     text-align: justify;
@@ -62,8 +61,8 @@
       line-height: 2;
   }
 
-  html[dir="rtl"] button#theme-toggle {
-    margin-bottom: -2px;
+  html[dir="rtl"] main{
+    letter-spacing: -0.75px;
   }
 
   html[dir="rtl"] #menu a {
@@ -113,4 +112,8 @@
 
     html[dir="rtl"] .post-content code , html[dir="rtl"] .post-content pre code{
       letter-spacing: 0;
+    }
+
+    .related ul li{
+      line-height: 1.3;
     }
