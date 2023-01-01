@@ -32,19 +32,12 @@
 
   @font-face {
     font-family: IranYekan;
-    src: url('/assets/fonts/iranyekanweblight.woff2') format('woff2');
-    font-weight: 300;
+    src: url('/assets/fonts/yekan.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
-  @font-face {
-    font-family: IranYekan;
-    src: url('/assets/fonts/iranyekanwebbold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
 
   body * {
       -webkit-font-smoothing: antialiased;
@@ -55,12 +48,8 @@
   }
 
   html[dir="rtl"] body{
-      font-family: 'YekanBakh',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-family: 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
       font-size: 16px;
-  }
-
-  html[dir="rtl"] .post-single .post-content p, html[dir="rtl"] .post-single .post-description, html[dir="rtl"] .post-single .post-content li, html[dir="rtl"] .list-page .post-content p, html[dir="rtl"] .list-page .post-description, html[dir="rtl"] .list-page .post-content li{
-    font-family: 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
   }
 
   html[dir="rtl"] .post-single .post-content p, html[dir="rtl"] .post-single .post-description, html[dir="rtl"] .list-page .post-content p, html[dir="rtl"] .list-page .post-description{
@@ -72,11 +61,11 @@
   }
 
   html[dir="rtl"] button#theme-toggle {
-    margin-bottom: -3px;
+    margin-bottom: -2px;
   }
 
-  html[dir="rtl"] .lang-switch a {
-    font-weight: bold;
+  html[dir="rtl"] #menu a {
+    letter-spacing: -1px;
   }
 
   .paginav .prev, .paginav .next {
@@ -97,6 +86,7 @@
 
   .paginav {
       min-height: 70px;
+      line-height: 23px;
   }
 
   .top-link {
@@ -116,7 +106,7 @@
     }
 
     .post-content table th {
-      font-size: 18px;
+      font-size: 16px;
     }
     html[dir="rtl"] .post-content table th {
       font-size: 16px;

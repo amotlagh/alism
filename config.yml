@@ -27,7 +27,7 @@ languages:
     languageName: فارسی
     title: علی مطلق
     weight: 2
-    copyright: "اینجا کپی رایت معنی نداره؛ لطفا اگه کپی می کنید، حداقل یه لینک بدید."
+    copyright: "لطفا اگه کپی می کنید، حداقل یه لینک بدید."
     menu:
       main:
         - identifier: home

@@ -4,6 +4,8 @@
 <head>
     {{- partial "head.html" . }}
     <link rel="stylesheet" href="/assets/styles/bootstrap-grid.min.css">
+    <link rel="preload" href="/assets/fonts/Yekan-Bakh-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/Yekan-Bakh-Heavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <style>
       
@@ -39,12 +41,6 @@
         font-family: 'YekanBakh', 'Rubik', sans-serif !important;
         box-shadow: 0px 4px 20px -5px var(--black);
         border-top: 1px solid var(--header-gray);
-        letter-spacing: -0.5px;
-      }
-
-      footer{
-        font-size: 16px;
-        font-family: 'YekanBakh', 'Rubik', sans-serif !important;
         letter-spacing: -0.5px;
       }
 
@@ -265,10 +261,10 @@
       }
 
       .web-blog p, .web-blog dd, .web-blog table td, .web-blog li{
-        letter-spacing: 0;
+        letter-spacing: -0.75px;
         line-height: 2;
         font-family: IranYekan;
-        font-weight: 300;
+        font-weight: 400;
       }
 
       .web-blog p, .web-blog dd{
