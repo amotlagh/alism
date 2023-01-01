@@ -45,9 +45,10 @@
 
   html[dir="auto"] body{
       font-family: 'Rubik',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-size: 16px;
   }
 
-  html[dir="rtl"] body{
+  html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
       font-family: 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
       font-size: 16px;
       letter-spacing: -0.75px;
@@ -106,9 +107,6 @@
     border-radius: var(--radius);
     }
 
-    .post-content table th {
-      font-size: 16px;
-    }
-    html[dir="rtl"] .post-content table th {
-      font-size: 16px;
+    html[dir="rtl"] .breadcrumbs a{
+      font-size: 14px;
     }
