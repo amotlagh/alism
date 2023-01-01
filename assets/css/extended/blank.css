@@ -110,3 +110,7 @@
     html[dir="rtl"] .breadcrumbs a{
       font-size: 14px;
     }
+
+    html[dir="rtl"] .post-content code , html[dir="rtl"] .post-content pre code{
+      letter-spacing: 0;
+    }
