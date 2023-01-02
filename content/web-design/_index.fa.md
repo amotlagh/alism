@@ -1,6 +1,6 @@
 ---
 
-layout: web-design
+layout: web-design-landing-fa
 pagetitle: طراحی سایت  حرفه ای و فروشگاه اینترنتی 
 title: طراحی سایت
 
