@@ -33,28 +33,27 @@ languages:
       main:
         - identifier: home
           name: خانه
-          url: /
+          url: /fa/
           weight: 10
         - identifier: web-design
           name: طراحی سایت
-          url: /web-design/
+          url: /fa/web-design/
           weight: 20
         - identifier: seo
           name: خدمات سئو
-          url: /seo/
+          url: /fa/seo/
           weight: 30
-          parent: services
         - identifier: services
           name: سایر خدمات
-          url: /services/
+          url: /fa/services/
           weight: 40         
         - identifier: posts
           name: بلاگ
-          url: /posts/
+          url: /fa/posts/
           weight: 50
         - identifier: about
           name: دربارهٔ من
-          url: /about/
+          url: /fa/about/
           weight: 70        
 
 
@@ -125,15 +124,15 @@ languages:
       main:
         - identifier: services
           name: Services
-          url: /services/
+          url: /en/services/
           weight: 5
         - identifier: about
           name: About
-          url: /about/
+          url: /en/about/
           weight: 20
         - identifier: work
           name: Works
-          url: /works/
+          url: /en/works/
           weight: 10
     params:
       comments: false
