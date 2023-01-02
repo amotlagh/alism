@@ -2,7 +2,8 @@ baseURL: https://alism.ir/
 languageCode: en
 title: Ali Motlagh
 theme: PaperMod
-
+defaultContentLanguageInSubdir: true
+disableHugoGeneratorInject: true
 
 
 
@@ -42,6 +43,7 @@ languages:
           name: خدمات سئو
           url: /seo/
           weight: 30
+          parent: services
         - identifier: services
           name: سایر خدمات
           url: /services/
@@ -230,3 +232,6 @@ markup:
       unsafe: true
     
 
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
