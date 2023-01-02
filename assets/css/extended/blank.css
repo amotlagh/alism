@@ -95,7 +95,7 @@
   .breadcrumbs {
     display: inline-block;
     margin-bottom: 10px;
-    padding-inline-start: 10px;
+    padding-inline-start: 14px;
     padding-inline-end: 14px;
     color: var(--secondary);
     line-height: 34px;
