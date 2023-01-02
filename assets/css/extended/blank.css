@@ -1,7 +1,7 @@
 
   @font-face {
-    font-family: Rubik;
-    src: url('/assets/fonts/rubik.woff2') format('woff2');
+    font-family: ali;
+    src: url('/assets/fonts/ali-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -37,11 +37,11 @@
   }
 
   html[dir="auto"] body{
-      font-family: 'Rubik',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-family: 'ali',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
   }
 
   html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
-      font-family: 'Rubik', 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-family: 'ali', 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
       font-size: 16px;
     }
 
