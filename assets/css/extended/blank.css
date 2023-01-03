@@ -78,6 +78,7 @@
 
   html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
       font-family: 'Inter', 'IranYekan',-apple-system,BlinkMacSystemFont,Ubuntu,segoe ui,Roboto,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
+      font-size: 16px;
     }
 
   html[dir="rtl"] .post-single .post-content p, html[dir="rtl"] .post-single .post-description, html[dir="rtl"] .list-page .post-content p, html[dir="rtl"] .list-page .post-description{
