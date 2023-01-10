@@ -28,7 +28,7 @@ keywords:
     
 author: هوتن القاس پور
  
-hideMeta: false
+#hideMeta: false
 TocOpen: true
 showToc: true
 #canonicalURL: "https://canonical.url/to/page"
