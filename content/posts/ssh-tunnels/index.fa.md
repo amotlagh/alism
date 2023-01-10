@@ -35,7 +35,7 @@ showToc: true
 #weight: 1
 #robotsNoIndex: true
 #searchHidden: true
-#draft: true
+draft: true
 #ShowBreadCrumbs: false
 #hideSummary: true
 #comments: false
