@@ -89,7 +89,10 @@ body * {
 
 html[dir="auto"] body{
     font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI', Roboto,Ubuntu,Oxygen,Cantarell,open sans,helvetica neue,sans-serif;
-    letter-spacing: -0.5px;
+}
+
+html[dir="auto"] body .post-single{
+  letter-spacing: -0.5px;
 }
 
 html[dir="rtl"] body, html[dir="rtl"] .post-content table th {
